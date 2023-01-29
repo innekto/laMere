@@ -1,0 +1,125 @@
+.explore {
+    padding-bottom: 50px;
+    padding-top: 86px;
+    max-width: 1440px;
+    margin: auto;
+
+    &__title {
+
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 1.50;
+        color: var(--main-text-color);
+        // margin-right: auto;
+    }
+
+    &__text {
+        position: relative;
+
+        max-width: 477px;
+        // font-weight: 300;
+        font-size: 22px;
+        line-height: 1.5;
+        /* or 150% */
+
+
+        color: rgba(47, 46, 48, 0.8);
+    }
+
+    &__wrap-1 {
+        display: flex;
+        align-items: flex-start;
+        gap: 51px;
+        margin-bottom: 60px;
+    }
+
+    &__wrap-2 {
+        display: flex;
+        gap: 51px;
+        justify-content: end;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+        text-transform: capitalize;
+        padding: 12px 32px;
+        color: var(--main-text-color);
+        border: 1px solid var(--main-text-color);
+        transition: var(--color-trans), var(--back-trans), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            color: rgb(255, 255, 255);
+            background-color: #3e3196;
+            border-color: #3e3196;
+        }
+    }
+}
+
+.container {}
+
+.title-wrap {
+    display: flex;
+    gap: 10%;
+    margin-bottom: 55px;
+
+}
+
+.image-wrap {
+
+    position: relative;
+
+    &__title {
+        padding-bottom: 12px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.5;
+        color: black;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.5;
+        color: black;
+    }
+}
+
+.arrow-link {
+    cursor: pointer;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    transition: var(--color-trans);
+    color: var(--main-text-color);
+
+    &:hover {
+        color: #6550ed;
+    }
+}
+
+.arrow {
+    fill: currentColor;
+}
+
+.calc {
+    width: calc(90%/2);
+}
+
+.price-wrap {
+    position: absolute;
+    bottom: 28px;
+    left: 40px;
+}

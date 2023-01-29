@@ -1,0 +1,99 @@
+.hero {
+    background-color: var(--main-text-color);
+    padding: 70px 0 200px;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+
+    &__wrapper {
+        padding-left: 40px;
+    }
+
+    &__title {
+        display: block;
+        width: 100%;
+
+        color: var(--second-text-color);
+        font-size: 105px;
+        line-height: 1.15;
+        font-family: "Bangers";
+        letter-spacing: 0.2em;
+        // margin-top: 107px;
+    }
+
+    &__title--small {
+        font-size: 50px;
+        line-height: 0.8;
+        margin-top: auto;
+        margin-bottom: 40px;
+        display: block;
+        text-align: right;
+
+        // letter-spacing: 0.05em;
+    }
+
+    &__discription {
+
+        font-size: 22px;
+        line-height: 1.5;
+        color: var(--second-text-color);
+        opacity: 0.8;
+        width: 388px;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        cursor: pointer;
+        display: block;
+        padding: 12px 32px;
+        color: var(--second-text-color);
+        background-color: #3e3196;
+        border: none;
+        font-size: 16px;
+        line-height: 2.2;
+        text-transform: uppercase;
+        transition: var(--color-trans), var(--back-trans);
+
+        &:hover {
+            color: rgb(0, 0, 0);
+            background-color: #4c4feb;
+        }
+    }
+
+    &__media-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: absolute;
+        left: 79px;
+        bottom: 87px;
+    }
+
+    // &__media-item {}
+
+    &__media-link {
+        color: var(--second-text-color);
+        transition: var(--color-trans);
+
+        &:hover {
+            color: aquamarine;
+        }
+    }
+
+    &__media-icon {
+        fill: currentColor;
+    }
+}
+
+// .container {}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dots {
+    position: absolute;
+    left: 1285px;
+    bottom: 38px;
+}
