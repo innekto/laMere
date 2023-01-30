@@ -4,9 +4,10 @@ const input = document.querySelector('.media-list__input');
 btn.addEventListener('click', ({ currentTarget }) => {
     input.classList.toggle('active');
     input.focus();
-
+    input.value = '';
     // console.log(currentTarget);
 });
+
 
 
 
