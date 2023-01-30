@@ -49,11 +49,18 @@
           </ul>
           <ul class="nav__media-list media-list">
             <li class="media-list__item">
-              <a href="" class="media-list__link">
-                <svg class="media-list__icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-Search"></use>
-                </svg>
-              </a>
+              <div class="media-list__input-wrap">
+                <input
+                  type="text"
+                  class="media-list__input"
+                  placeholder="search..."
+                />
+                <button class="media-list__link media-list__link--button">
+                  <svg class="media-list__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-Search"></use>
+                  </svg>
+                </button>
+              </div>
             </li>
             <li class="media-list__item">
               <a href="" class="media-list__link">
@@ -501,5 +508,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js" type="module"></script>
     <script src="./js/show-more.js" type="module"></script>
+    <script src="./js/search.js" type="module"></script>
   </body>
 </html>

@@ -52,7 +52,34 @@
 
     &__item {}
 
+    &__input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: grey;
+        outline: none;
+        padding-left: 8px;
+        font-size: 14px;
+        color: rgb(255, 255, 255, 0.8);
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    &__input-wrap {
+        position: relative;
+
+    }
+
     &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: var(--second-text-color);
         transition: var(--color-trans);
 
@@ -61,7 +88,29 @@
         }
     }
 
+    &__link--button {
+        cursor: pointer;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        background-color: rgb(74, 74, 74);
+        // border: 1px solid tomato;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+    }
+
     &__icon {
         fill: currentColor
     }
+}
+
+.media-list__input.active {
+    width: 200px;
+    border-radius: 30px;
 }
